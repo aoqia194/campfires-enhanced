@@ -21,7 +21,7 @@ Steps to reproduce the behavior:
 A clear and concise description of what you expected to happen.
 
 **Screenshots and Logs**
-If applicable, add screenshots (via GitHub) and or logs ((via mclogs)[https://mclo.gs/]) to help explain your problem.
+If applicable, add screenshots (via GitHub) and or logs (via [mclogs](https://mclo.gs/)) to help explain your problem.
 
 **Desktop (please complete the following information):**
  - OS: [e.g. Windows 11, MacOS, Ubuntu]
