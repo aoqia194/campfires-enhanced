@@ -1,44 +1,48 @@
 {
-	"schemaVersion": 1,
-	"id": "campfires_enhanced",
-	"version": "${version}",
-	"name": "Campfires Enhanced",
-	"description": "This is an example description! Tell everyone what your mod is about!",
-	"authors": [
-		"aoqia"
-	],
-	"contact": {
-		"homepage": "https://github.com/aoqia194/campfires-enhanced",
-		"sources": "https://github.com/aoqia194/campfires-enhanced"
-	},
-	"license": "GPLv3",
-	"icon": "assets/campfires_enhanced/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"aoqia.campfires_enhanced.CampfiresEnhanced"
-		],
-		"client": [
-			"aoqia.campfires_enhanced.CampfiresEnhancedClient"
-		],
-		"fabric-datagen": [
-			"aoqia.campfires_enhanced.CampfiresEnhancedDataGenerator"
-		]
-	},
-	"mixins": [
-		"campfires_enhanced.mixins.json",
-		{
-			"config": "campfires_enhanced.client.mixins.json",
-			"environment": "client"
-		}
-	],
-	"depends": {
-		"fabricloader": ">=0.14.24",
-		"minecraft": "~1.20.2",
-		"java": ">=17",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
-	}
+    "schemaVersion": 1,
+    "id": "campfires_enhanced",
+    "version": "${version}",
+    "name": "Campfires Enhanced",
+    "description": "Campfires, but done better!",
+    "authors": [
+        "aoqia"
+    ],
+    "contact": {
+        "sources": "https://github.com/aoqia194/campfires-enhanced"
+    },
+    "license": "GPL-3.0-only",
+    "icon": "assets/campfires_enhanced/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "aoqia.campfires_enhanced.CampfiresEnhanced"
+        ],
+        "client": [
+            "aoqia.campfires_enhanced.CampfiresEnhancedClient"
+        ],
+        "fabric-datagen": [
+            "aoqia.campfires_enhanced.CampfiresEnhancedDataGenerator"
+        ]
+    },
+    "mixins": [
+        "campfires_enhanced.mixins.json",
+        {
+            "config": "campfires_enhanced.client.mixins.json",
+            "environment": "client"
+        }
+    ],
+    "depends": {
+        "fabricloader": ">=0.14.24",
+        "minecraft": "~1.20.2",
+        "java": ">=17",
+        "fabric-api": "*"
+    },
+    "recommends": {
+        "modmenu": "*"
+    },
+    "custom": {
+        "modmenu": {
+            "update_checker": true
+        }
+    }
 }

@@ -3,7 +3,8 @@
 	"package": "aoqia.campfires_enhanced.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-      "CampfireBlockMixin"
+		"CampfireBlockEntityMixin",
+		"CampfireBlockMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
