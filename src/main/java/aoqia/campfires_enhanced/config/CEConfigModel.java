@@ -8,9 +8,12 @@ import static aoqia.campfires_enhanced.CampfiresEnhanced.MOD_ID;
 @Modmenu(modId = MOD_ID)
 @Config(name = MOD_ID, wrapperName = "CEConfig")
 public class CEConfigModel {
-    public boolean unlitCampfires = true;
+    public boolean isEnabled = true;
 
-    // @RangeConstraint(min = 1, max = 20)
-    // public int spreadTickSpeed = 4;
-    public boolean dirtSpread = true;
+    public boolean doUnlitCampfires = true;
+
+    public boolean doFuelSystem = true;
+
+    public boolean doDirtSpread = true;
+    public long dirtSpreadTicks = 10 * 20L;
 }
